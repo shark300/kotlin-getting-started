@@ -13,7 +13,7 @@ Make sure you have Java and Maven installed.  Also, install the [Heroku CLI](htt
 ```sh
 $ git clone https://github.com/heroku/kotlin-getting-started.git
 $ cd kotlin-getting-started
-$ mvn install
+$ gradle clean build
 $ heroku local:start
 ```
 
