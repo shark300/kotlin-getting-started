@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'hello')}">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kotlin Getting Started on Heroku</title>
+    <div th:replace="fragments/layout :: css"/>
+</head>
 <body>
-  <div class="container">
+
+<div th:replace="fragments/layout :: header"/>
+
+<div class="container">
     <p th:text="${science}"/>
-  </div>
+</div>
+
+<div th:replace="fragments/layout :: footer"/>
+
 </body>
 </html>
